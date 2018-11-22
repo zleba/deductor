@@ -1,4 +1,5 @@
 # Deductor
+[![Build Status](https://travis-ci.org/zleba/deductor.svg?branch=master)](https://travis-ci.org/zleba/deductor)
 
 First get `docker` to your system, installation instructions for Ubuntu and MAC can be found in the following pages
 https://docs.docker.com/docker-for-mac/install/
