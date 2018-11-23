@@ -13,7 +13,9 @@ RUN    wget http://pages.uoregon.edu/soper/deductor/deductor-2.1.1.tar.gz  \
     && wget http://pages.uoregon.edu/soper/deductor/deductor-user-2.1.1.tar.gz  \
     && tar zxvf deductor-2.1.1.tar.gz  \
     && tar zxvf deductor-user-2.1.1.tar.gz  \
-    && rm  *.gz
+    && rm  *.gz \
+    && find  deductor-2.1.1  -iname "\.*" -delete \
+    && find  deductor-user-2.1.1  -iname "\.*" -delete
 
 #Compile and istall to /usr
 RUN mkdir -p deductor-2.1.1/build
